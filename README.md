@@ -1,5 +1,5 @@
 # Family-Project
 
-![design photo](https://github.com/Jakubisik/Family-Project/blob/master/project.png)
+![main](https://github.com/Jakubisik/Family-Project/blob/master/main-site.png)
 
-![photo of the finished page](https://github.com/Jakubisik/Family-Project/blob/master/finished.png)
+![under page](https://github.com/Jakubisik/Family-Project/blob/master/elwira--sub-page.png)

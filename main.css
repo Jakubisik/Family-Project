@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'sans-serif';
+}
+
+body {
+    background: #3A1C71;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FFAF7B, #D76D77, #3A1C71);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #ffaf7b, #D76D77, #3A1C71); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+}
+
+.logo {
+    background-image: url(img/logo2\(1\).png);
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 300px;
+    margin: 2rem auto 0 auto;
+    animation: logo;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    position: relative;
+}
+@keyframes logo {
+    0% {
+        top: -300px;
+        opacity: 0;
+    }
+    70% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+        top: 0px;
+    }
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 3rem;
+}
+
+a {
+    text-decoration: none;
+    position: relative;
+}
+li {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-top: 5rem;
+    position: relative;
+    border-radius: 20px;
+    width: 11rem;
+    text-align: right;
+    box-shadow: 15px 15px 40px 0px rgba(145, 192, 255, 0.5), inset -12px -12px 16px 0px rgba(145, 192, 255, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
+    padding: .5rem 1rem;
+    font-weight: light;
+    text-shadow: 2px 2px #8ee5ff;
+    font-size: 1.1rem;
+    font-style: italic;
+    
+}
+.elwira:hover::before,
+.jakub:hover::before,
+.lucja:hover::before,
+.tymon:hover::before {
+    animation: hover 300ms ease-in-out forwards infinite alternate;
+}
+@keyframes hover {
+    0% {
+        bottom: 1rem;
+    }    
+    
+    100% {
+        bottom: 0.5rem;
+    }    
+    
+}
+::before {
+    left: 15%;
+    right: 85%;
+    bottom: 1rem;
+    z-index: 1;
+    display: flex;
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    margin-right: 5px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 15px rgb(0, 57, 110);
+}
+
+.elwira::before {
+    content: "";
+    background:url(img/głowa-elwiry.png) no-repeat;
+    background-size: cover;
+}
+
+.jakub::before {
+    content: "";
+    background:url(img/głowa-kuby.png) no-repeat;
+    background-size: cover;
+}
+
+.lucja::before {
+    content: "";
+    background:url(img/głowa-łucji.png) no-repeat;
+    background-size: cover;
+}
+
+.tymon::before {
+    content: "";
+    background:url(img/głowa-tymona.png) no-repeat;
+    background-size: cover;
+}
